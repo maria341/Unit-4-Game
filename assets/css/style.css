@@ -1,3 +1,7 @@
+body {
+   background-color: lightblue;
+}
+
 #header {
     background-color: yellow;
 }
@@ -11,5 +15,5 @@ h3 {
 }
 
 p {
-    background-color: #ff9999#;
+    background-color: #ff9999;
 }
