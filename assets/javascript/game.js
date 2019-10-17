@@ -28,6 +28,10 @@
 
                $(".playerScore").empty();
                $(".playerScore").append(playerScore);
+
+               $(".randomNumber").empty();
+               $(".randomNumber").append(randomNumber);
+            
          }
       
        var restartGame = function() {
@@ -35,9 +39,6 @@
          
         randomNumber = Math.floor((Math.random() * 101) + 19);
         
-        $(".randomNumber").empty();
-        $(".randomNumber").text(randomNumber);
-            
           crystal1 = Math.floor(Math.random() * 12) + 1;
           crystal2 = Math.floor(Math.random() * 12) + 1;
           crystal3 = Math.floor(Math.random() * 12) + 1;
@@ -53,12 +54,12 @@
            
           if (playerScore === randomNumber) {
              wins = wins +1;
-             alert("You win!");
+             alert("You win!")
              restartGame();
             }
              else if (playerScore > randomNumber) {
                losses = losses +1;
-               alert("You lost!");
+               alert("You lost!")
                restartGame();
             }
             else {

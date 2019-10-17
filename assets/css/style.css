@@ -1,9 +1,17 @@
 body {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
    background-color: lightblue;
+   align-items: center;
 }
 
 #header {
     background-color: yellow;
+    margin-top: 20px;
 }
 
 h2 {
@@ -14,6 +22,9 @@ h3 {
     background-color: #00ffbf;
 }
 
-p {
+.p {
     background-color: #ff9999;
+    font-display: italic;
+    font-size: 20px;
 }
+
