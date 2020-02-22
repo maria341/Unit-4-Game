@@ -10,20 +10,19 @@ body {
 }
 
 #header {
-    background-color: yellow;
     margin-top: 20px;
+    text-align: center;
+    color: yellow;
+    font-style: italic;
 }
 
 h2 {
-    background-color: #ffbf00;
+    text-align: center;
 }
 
-h3 {
-    background-color: #00ffbf;
-}
 
-.p {
-    background-color: #ff9999;
+.card-body p{
+    color: green;
     font-display: italic;
     font-size: 20px;
 }

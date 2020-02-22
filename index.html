@@ -6,85 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game Collector</title>
-     <!--Css link-->
+    <!--Css link-->
     <link href="./assets/css/style.css" type="text/css" rel="stylesheet">
     <link href="./assets/css/reset.css" type="text/css" rel="stylesheet">
     <!--Bootstrap link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    
+
     <!--Jquery link-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
         </script>
-     
+
 </head>
 
 <body>
     <div class="container">
-    
-       <div class="row">
-           <div class="col-md-4">
-             <h1 id="header">Crystal Collector!</h1>
-           </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 id="header">Crystal Collector!</h1>
+            </div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-6">
-                <h2>Instructions:</h2>
-        <div class="paragraph">
-             <p>When the player start the game the random number to matches with player score will be given.</p>
-                
-             <p>When the player clicks each crystal, it will add a specific amount of points to the player's total score.</p>
-                
-             <p>In each crystal have a different amount and it reveal once the player click on it, and it will update the
-                score counter.</p>
-                
-             <p>If the player total score matches the random number from the beginning of the game, it will increment win.</p>
-                
-             <p>If the player total score is greater than the random number, it will decrement lost.</p>
-                
-             <p>When the player wins or losses the game will restart, once the player play again each crystal will assign new
-                hidden numbers values.</p>
-        </div>
-            
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>INSTRUCTIONS:</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>When the player start the game the random number to matches with player score will be given.
+                        </p>
+
+                        <p>When the player clicks each crystal, it will add a specific amount of points to the player's
+                            total score.</p>
+
+                        <p>In each crystal have a different amount and it reveal once the player click on it, and it
+                            will update the
+                            score counter.</p>
+
+                        <p>If the player total score matches the random number from the beginning of the game, it will
+                            increment win.</p>
+
+                        <p>If the player total score is greater than the random number, it will decrement lost.</p>
+
+                        <p>When the player wins or losses the game will restart, once the player play again each crystal
+                            will assign new
+                            hidden numbers values.</p>
+                    </div>
+                </div>
             </div>
-        
+        </div><br>
+        <div class="row">
+            <div class="col-5" id="randumNumber">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Random Number is: <span class="randomNumber"></span></h3>
+                    </div>
+                </div><br>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Your total score is:</h4>
+                        <h4 class="playerScore"></h4>
+                    </div>
+                </div>
             </div>
 
+            <div class="col-5" id="randumNumber">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Wins: <span class="wins"></span></h3>
+                        <h3>Losses: <span class="losses"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div><br>
         <div class="row">
-            <div class="col-md-3" id="randumNumber">
-                 <h3>Random Number is: <span class="randomNumber"></span></h3>
+            <div class="col-md-3" id="crystals1">
+                <img src="assets\images\crystal1.png" class="click" id="crystal1" height="150" width="150">
             </div>
-            <div class="col-md-3" id="score">
-                <h3>Wins: <span class="wins"></span></h3>
-                <h3>Losses: <span class="losses"></span></h3>
+            <div class="col-md-3" id="crystals2">
+                <img src="assets\images\crystal2.png" class="click" id="crystal2" height="150" width="150">
             </div>
-        </div> 
-        <br>
-        <div class="row">
-            <div class="col-md-1" id="crystals1">
-                <img src="assets\images\crystal1.png" class="click" id="crystal1" height="100" width="100">
+            <div class="col-md-3" id="crystals3">
+                <img src="assets\images\crystal3.png" class="click" id="crystal3" height="150" width="150">
             </div>
-            <div class="col-md-1" id="crystals2">
-                <img src="assets\images\crystal2.png" class="click" id="crystal2" height="100" width="100">
-            </div>
-            <div class="col-md-1" id="crystals3">
-                <img src="assets\images\crystal3.png" class="click" id="crystal3" height="100" width="100">
-            </div>
-            <div class="col-md-1" id="crystals4">
-                <img src="assets\images\crystal4.png" class="click" id="crystal4" height="100" width="100">
+            <div class="col-md-3" id="crystals4">
+                <img src="assets\images\crystal4.png" class="click" id="crystal4" height="150" width="150">
             </div>
         </div>
-         <div class="row">
-            </div class="col-md-1">
-              <h4>Your total score is:</h4>
-              
-              <h4 class="playerScore"></h4>
-            </div>
-        </div>
-    </div>  
+    </div>
 
-     <!--javascript link-->
+
+
+    <!--javascript link-->
     <script src="./assets/javascript/game.js"></script>
 
 </body>
