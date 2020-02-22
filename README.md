@@ -41,3 +41,5 @@ The app should show the number of games the player wins and loses. To that end, 
 *JQuery
 
 # Example Picture Below 
+
+![](https://github.com/maria341/Unit-4-Game/blob/master/assets/images/screenshot.png)
